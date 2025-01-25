@@ -1,0 +1,31 @@
+<div class="carousel-container relative w-full overflow-hidden">
+  <!-- Slides -->
+  <div
+    class="slides flex transition-transform duration-700 ease-in-out"
+    [style.transform]="'translateX(-' + currentIndex * 100 + '%)'"
+  >
+    <div
+      *ngFor="let image of images; let i = index"
+      class="slide min-w-full relative flex items-center justify-center"
+    >
+      <!-- Image -->
+      <img [src]="image.src" alt="Carousel Image" class="w-full h-[400px] object-cover" />
+
+      <!-- Text Overlay -->
+      <div
+        class="text-overlay absolute inset-0 flex flex-col items-center justify-center text-white transition-opacity duration-700"
+        [class.hidden]="i !== currentIndex"
+      >
+        <p class="text-lg mb-2">{{ image.text }}</p>
+        <h2 class="text-2xl font-bold mb-4">{{ image.name }}</h2>
+        <button class="button-primary">
+          Contact Us
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Buttons -->
+  <button class="nav-btn left-4" (click)="previous()">&#8249;</button>
+  <button class="nav-btn right-4" (click)="next()">&#8250;</button>
+</div>
