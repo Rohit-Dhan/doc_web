@@ -38,18 +38,3 @@
     }
   }
 }
-
-// Contact Us Button Styles
-.button-primary {
-  background-color: transparent;
-  color: var(--primary-color); /* Use primary color for text and border */
-  border: 2px solid var(--primary-color); /* Add border */
-  padding: 10px 20px;
-  border-radius: 4px;
-  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
-
-  &:hover {
-    background-color: var(--primary-color); /* Set background on hover */
-    color: white; /* Change text color */
-  }
-}

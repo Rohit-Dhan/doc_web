@@ -10,7 +10,7 @@ export class CarouselComponent {
 
   ngOnInit() {
     // Start auto-scrolling
-    // this.startAutoScroll();
+    this.startAutoScroll();
   }
 
   ngOnDestroy() {

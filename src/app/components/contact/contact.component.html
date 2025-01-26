@@ -1,7 +1,89 @@
-<!-- contact.component.html -->
-<div class="contact p-6 bg-secondary rounded-lg text-white">
-    <h2>Contact Us</h2>
-    <p>Phone: +91 9230641690</p>
-    <p>Email: info@kidneycare.com</p>
+<div class="bg text py-10">
+  <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Available At Section -->
+    <div>
+      <h3 class="font-bold text-lg mb-4 uppercase text-primary">Available at :</h3>
+      <ul class="space-y-2">
+        <li>Medica Superspeciality Hospital, Kolkata</li>
+        <li>Lakhotia Medical Centre, Salkia, Howrah</li>
+        <li>Kanak Clinic, Tarakeswar</li>
+      </ul>
+      <!-- Social Icons -->
+      <div class="flex gap-4 mt-6">
+        <a href="#" class="p-2 bg-gray-800 rounded-full">
+          <i class="fab fa-facebook text-yellow-400"></i>
+        </a>
+        <a href="#" class="p-2 bg-gray-800 rounded-full">
+          <i class="fab fa-twitter text-yellow-400"></i>
+        </a>
+        <a href="#" class="p-2 bg-gray-800 rounded-full">
+          <i class="fab fa-youtube text-yellow-400"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <div>
+      <h3 class="font-bold text-lg mb-4 uppercase text-primary">Services</h3>
+      <ul class="space-y-2">
+        <li>Diabetic Kidney Disease</li>
+        <li>Hypertension</li>
+        <li>Lupus Nephritis</li>
+        <li>Glomerulonephritis</li>
+        <li>Kidney Transplantation</li>
+        <li>Interventional Nephrology</li>
+        <li>Paediatric Nephrology</li>
+      </ul>
+    </div>
+
+    <!-- Get In Touch Section -->
+    <div>
+      <h3 class="font-bold text-lg mb-4 uppercase text-primary">Get In Touch</h3>
+      <p class="mb-2">
+        Address: 127, Eastern Metropolitan Bypass, Nitai Nagar, Mukundapur,
+        Kolkata, West Bengal 700099
+      </p>
+      <p class="mb-2">Phone: (033) 6652 0000</p>
+      <p class="mb-4">
+        Appointment: <a href="#" class="text-primary hover:underline">https://medicahospitals.in/doctor-profile/nephrology/dr-rohit-rungta/</a>
+      </p>
+    </div>
   </div>
-  
+
+  <!-- Contact Form -->
+  <div class="bg py-8 px-4 md:px-12 mt-10">
+    <h3 class="text-center text-lg font-bold text-primary text-400 mb-6 uppercase">Contact Us</h3>
+    <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <input
+        type="text"
+        placeholder="Name"
+        class="p-3 rounded-md border-2 bg-bg text outline-none focus:ring-2 focus:ring-yellow-400 focus:border-none"
+      />
+      <input
+        type="email"
+        placeholder="Email"
+        class="p-3 rounded-md border-2 bg-bg text outline-none focus:ring-2 focus:ring-yellow-400 focus:border-none"
+      />
+      <input
+        type="text"
+        placeholder="Phone"
+        class="p-3 rounded-md border-2 bg-bg text outline-none focus:ring-2 focus:ring-yellow-400 focus:border-none"
+      />
+      <textarea
+        placeholder="Message"
+        class="p-3 rounded-md border-2 border-text bg-bg text outline-none focus:ring-2 focus:ring-yellow-400 md:col-span-2 h-32 focus:border-none"
+      ></textarea>
+      <button
+        type="submit"
+        class="bg-transparent text-primary border-2 border-primary  rounded-md transition duration-300 hover:bg-primary hover:text-white py-3 px-6 hover:bg-yellow-500 transition md:col-span-2"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <div class="text-center mt-6 text-sm text">
+    <p>Copyright © 2025 Dr. Rohit Rungta | Powered by Dr. Rohit Rungta</p>
+  </div>
+</div>

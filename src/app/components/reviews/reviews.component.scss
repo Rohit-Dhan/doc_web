@@ -1,0 +1,36 @@
+.reviews-container {
+    background-color: var(--bg-color);
+  }
+  
+  .reviews {
+    display: flex;
+    gap: 1.5rem;
+    will-change: transform;
+    animation: scroll 20s linear infinite;
+  }
+  .reviews.paused {
+    animation-play-state: paused; /* Pause the animation */
+  }
+  .review-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  @media (max-width: 768px) {
+    .reviews {
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+    }
+    .review-card {
+      flex: 0 0 90%; 
+    }
+  }
+  

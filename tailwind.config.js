@@ -8,8 +8,8 @@ module.exports = {
       colors: {
         primary: "#ff9800", // Primary color
         secondary: "#212121", // Secondary color
-        text: "#2c2c2c", // Text color
-        bg: "#ffffff", // Background color
+        text: "#ffffff", // Text color "#2c2c2c
+        bg: "#2c2c2c", // Background color
       },
       fontFamily: {
         roboto: ["Roboto", "Helvetica Neue", "sans-serif"], // Roboto as the primary font

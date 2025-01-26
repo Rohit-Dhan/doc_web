@@ -21,6 +21,14 @@ export class ServicesComponent {
       image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLpWSegzfLiFNp99h9JpnWU7Tr9FxxEtxDHg&s',
       title: 'Orthopedics',
       description: 'Specialized care for bones, joints, and muscles.',
+    },{
+      image: 'https://my.clevelandclinic.org/-/scassets/images/org/health/articles/24214-nephrologist',
+      title: 'Nephrology',
+      description: 'Comprehensive treatment for kidney-related issues.',
+    }, {
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLpWSegzfLiFNp99h9JpnWU7Tr9FxxEtxDHg&s',
+      title: 'Orthopedics',
+      description: 'Specialized care for bones, joints, and muscles.',
     }
     // Add more services as needed
   ];
