@@ -1,36 +1,55 @@
 .reviews-container {
-    background-color: var(--bg-color);
+  position: relative;
+  background-color: var(--bg-color);
+  text-align: center;
+}
+
+/* Wrapper to Ensure Reviews Move Down */
+.reviews-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Reviews Flexbox - Auto Wrap */
+.reviews {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to move down if space is unavailable */
+  gap: 20px;
+  justify-content: center;
+  max-width: 90%;
+}
+
+/* Navigation Buttons */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+
+  &:hover {
+    background-color: var(--primary-color);
   }
-  
+}
+
+/* Responsive - Allow Reviews to Move Down */
+@media (max-width: 1024px) {
   .reviews {
-    display: flex;
-    gap: 1.5rem;
-    will-change: transform;
-    animation: scroll 20s linear infinite;
+    justify-content: center;
   }
-  .reviews.paused {
-    animation-play-state: paused; /* Pause the animation */
+}
+
+@media (max-width: 768px) {
+  .reviews {
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .review-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 0 0 90%;
   }
-  
-  
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-  @media (max-width: 768px) {
-    .reviews {
-      flex-wrap: nowrap;
-      overflow-x: scroll;
-    }
-    .review-card {
-      flex: 0 0 90%; 
-    }
-  }
-  
+}

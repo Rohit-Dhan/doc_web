@@ -1,41 +1,44 @@
-<div class="reviews-container relative overflow-hidden bg-secondary py-8">
+<div class="reviews-container relative bg-secondary py-8 flex flex-col items-center">
   <div class="text-center mb-6">
     <h2 class="text-3xl font-bold text-primary uppercase">Happy Patients & Feedbacks</h2>
   </div>
 
-  <!-- Scrolling Reviews -->
-  <div
-    class="reviews flex gap-6 px-6"
-    [class.paused]="isHovered"
-    (mouseenter)="pauseScroll()"
-    (mouseleave)="resumeScroll()"
-  >
-    <div
-      *ngFor="let review of reviews"
-      class="review-card bg p-6 rounded-lg shadow-lg flex flex-col justify-between text flex-shrink-0 w-[300px] max-w-[300px] hover:shadow-[0_8px_15px] hover:shadow-primary"
-    >
-      <!-- User Info -->
-      <div class="flex items-center gap-4 mb-4">
-        <img
-          [src]="review.image"
-          alt="{{ review.name }}"
-          class="w-12 h-12 rounded-full object-cover"
-        />
-        <div>
-          <h4 class="font-bold text-lg">{{ review.name }}</h4>
-          <p class="text-sm text-gray-400">@username</p>
-        </div>
-      </div>
+  <!-- Review Navigation Buttons -->
+  <button class="nav-btn left-4" (click)="prevReview()">&#10094;</button>
 
-      <!-- Review Text -->
-      <p class="text-sm mb-4 flex-grow">"{{ review.feedback }}"</p>
-
-      <!-- Rating -->
-      <div class="flex items-center">
-        <div class="flex gap-1">
-          <i class="fa fa-star text-yellow-400" *ngFor="let _ of [].constructor(review.rating)"></i>
+  <!-- Reviews Wrapper with Dynamic Wrap -->
+  <div class="reviews-wrapper">
+    <div class="reviews">
+      <div
+        *ngFor="let review of paginatedReviews"
+        class="review-card bg p-6 rounded-lg shadow-lg flex flex-col justify-between text flex-shrink-0 w-[300px] max-w-[300px] hover:shadow-[0_8px_15px] hover:shadow-primary"
+      >
+        <!-- User Info -->
+        <div class="flex items-center gap-4 mb-4">
+          <img
+            [src]="review.image"
+            alt="{{ review.name }}"
+            class="w-12 h-12 rounded-full object-cover"
+          />
+          <div>
+            <h4 class="font-bold text-lg">{{ review.name }}</h4>
+            <p class="text-sm text-gray-400">@username</p>
+          </div>
         </div>
-        <span class="text-sm text-400 ml-2">{{ review.rating }}/5</span>
+
+        <!-- Review Text -->
+        <p class="text-sm mb-4 flex-grow">"{{ review.feedback }}"</p>
+
+        <!-- Rating -->
+        <div class="flex items-center">
+          <div class="flex gap-1">
+            <i class="fa fa-star text-yellow-400" *ngFor="let _ of [].constructor(review.rating)"></i>
+          </div>
+          <span class="text-sm text-400 ml-2">{{ review.rating }}/5</span>
+        </div>
       </div>
     </div>
   </div>
+
+  <button class="nav-btn right-4" (click)="nextReview()">&#10095;</button>
+</div>
