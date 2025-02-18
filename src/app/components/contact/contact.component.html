@@ -11,13 +11,13 @@
       <!-- Social Icons -->
       <div class="flex gap-4 mt-6">
         <a href="#" class="p-2 bg-gray-800 rounded-full">
-          <i class="fab fa-facebook text-yellow-400"></i>
+          <i class="fab fa-facebook custom-icon-color"></i>
         </a>
         <a href="#" class="p-2 bg-gray-800 rounded-full">
-          <i class="fab fa-twitter text-yellow-400"></i>
+          <i class="fab fa-twitter custom-icon-color"></i>
         </a>
         <a href="#" class="p-2 bg-gray-800 rounded-full">
-          <i class="fab fa-youtube text-yellow-400"></i>
+          <i class="fab fa-youtube custom-icon-color"></i>
         </a>
       </div>
     </div>
@@ -90,7 +90,10 @@
     <!-- Map Section -->
     <div class="bg-white shadow-md rounded-md overflow-hidden">
       <h3 class="text-center text-lg font-bold text-primary text-400 py-4 uppercase">Find Us</h3>
-      <iframe
+      <!-- <div #mapContainer id="map"></div> -->
+      <google-map height="400px" width="100%" [center]="center" [zoom]="zoom"></google-map>
+
+      <!-- <iframe
         class="w-full h-96"
         frameborder="0"
         style="border:0"
@@ -98,7 +101,7 @@
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.779607926507!2d88.38729441496726!3d22.572646985179654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0277bd27c20f8f%3A0xf9a5b6f52663fef!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1633605567427!5m2!1sen!2sin"
-      ></iframe>
+      ></iframe> -->
     </div>
   </div>
 

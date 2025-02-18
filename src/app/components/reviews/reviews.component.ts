@@ -10,7 +10,7 @@ export class ReviewsComponent {
     {
       name: 'Chandan Sinha',
       feedback: 'Without doubt,er is unfortunately suffering from kidney problems, and I am very lucky to find Dr.er is unfortunately suffering from kidney problems, and I am very lucky to find Dr.er is unfortunately suffering from kidney problems, and I am very lucky to find Dr. the best Nephrologist you can come across.',
-      rating: 5,
+      rating: 2,
       image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLpWSegzfLiFNp99h9JpnWU7Tr9FxxEtxDHg&s'
     },
     {

@@ -10,7 +10,8 @@ import { AboutComponent } from './components/about/about.component';
 import { ServicesComponent } from './components/services/services.component';
 import { ReviewsComponent } from './components/reviews/reviews.component';
 import { ContactComponent } from './components/contact/contact.component';
-
+import { GoogleMapsModule } from '@angular/google-maps';
+import { HomeComponent } from './home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,12 +20,13 @@ import { ContactComponent } from './components/contact/contact.component';
     AboutComponent,
     ServicesComponent,
     ReviewsComponent,
-    ContactComponent
+    ContactComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,GoogleMapsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
