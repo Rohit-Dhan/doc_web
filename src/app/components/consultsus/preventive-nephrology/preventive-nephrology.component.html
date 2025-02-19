@@ -1,0 +1,58 @@
+<div class="relative">
+    <!-- Fixed Top Image -->
+    <app-base-image [title]="data.title"></app-base-image>
+    <div>
+      <h2>
+        {{data.description}}
+      </h2>
+    </div>
+    <!-- Scrollable Content -->
+    <div class=" px-6 py-10 space-y-12">
+      <div *ngFor="let service of data.aboutServices; let i = index" class="flex flex-col md:flex-row items-center gap-6"
+        [ngClass]="{'md:flex-row-reverse': i % 2 !== 0}">
+  
+        <!-- Image Section -->
+        <img [src]="service.image" class="w-full md:w-1/2 rounded-lg shadow-lg" alt="Service Image">
+  
+        <!-- Text Section -->
+        <div class="md:w-1/2">
+          <h2 class="text-2xl font-bold mb-4">{{ service.title }}</h2>
+          <ul class="ml-2 space-y-3 "> 
+            <li *ngFor="let desc of service.description" class="flex items-center gap-2">
+              <i aria-hidden="true" [ngClass]="data.icon" class=" text-primary text-lg"></i>
+              <span>{{ desc }}</span>
+            </li>
+          </ul>
+        </div>
+  
+      </div>
+      <!-- Do's & Don'ts Section -->
+      <div class="grid grid-cols-1 md:grid-cols-2">
+        <div class="bg-primary p-6 text-bg">
+          <h3 class="text-xl text-secondary font-bold">{{data.dos.title}}</h3>
+          <ul class="list-disc ml-4 space-y-2">
+            <li *ngFor="let doItem of data.dos.list" class="flex items-start gap-2">
+              <i aria-hidden="true" class="fas fa-angle-double-right text-secondary text-lg"></i>
+              {{ doItem }}</li>
+          </ul>
+        </div>
+        <div class="text-white">
+          <img src="https://drrohitrungta.com/wp-content/uploads/2023/07/12.jpg" alt="">
+          <!-- <h3 class="text-xl text-primary font-bold">Don'ts</h3>
+          <ul class="list-disc ml-4 space-y-2">
+            <li *ngFor="let dontItem of data.donts.list" class="flex items-center gap-2">
+              <i aria-hidden="true" class="fas fa-angle-double-right text-primary text-lg"></i>
+              {{ dontItem }}</li>
+          </ul> -->
+        </div>
+      </div>
+  
+      <!-- Call to Action -->
+      <div class="mt-10 text-center bg-gray-200 p-6 rounded-lg">
+        <h3 class="text-lg font-bold">Book an Appointment</h3>
+        <button class="bg-black text-white px-6 py-2 rounded mt-3 hover:bg-gray-800">
+          Connect With Us
+        </button>
+      </div>
+    </div>
+  </div>

@@ -1,6 +1,6 @@
 /* nav.component.scss */
 nav {
-    background-color: var(--primary-color);
+    background-color: var( --bg-color);
   }
   /* Logo Container */
 .logo {
@@ -9,16 +9,4 @@ nav {
 }
 
 /* Logo Image */
-.logo-img {
-  width: 120px;
-  height: auto;
-  max-height: 60px;
-  object-fit: contain;
-}
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .menu {
-    display: none;
-  }
-}

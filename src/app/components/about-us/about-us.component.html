@@ -1,0 +1,84 @@
+<div class="">
+    <app-base-image [title]="'About Us'"></app-base-image>
+    <div class="about flex flex-col md:flex-row gap-2 items-center ">
+        <!-- Doctor's Image -->
+        <img 
+          src="https://drrohitrungta.com/wp-content/uploads/2023/06/WhatsApp-Image-2022-10-19-at-6.21.58-PM.png" 
+          class="doctor-img"
+          alt="Dr. Rohit Rungta"
+        />
+      
+        <!-- Doctor's Info -->
+        <div class="text-center md:text-left">
+          <h2 class="text-primary uppercase font-bold text-sm tracking-wide mb-2">{{aboutDoctor.title}}</h2>
+          <h3 class="text-2xl font-bold text-text mb-4">{{aboutDoctor.name}}</h3>
+          <div class="mb-2 text-secondary" *ngFor="let desc of aboutDoctor.description">
+            <h2>{{desc}}</h2>
+          </div>
+      
+          <!-- Experience Stats -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 mt-6">
+            <div class="text-center">
+              <p class="text-primary text-2xl font-bold">15+</p>
+              <p class="text-color text-sm">Total Experience</p>
+            </div>
+            <div class="text-center">
+              <p class="text-primary text-2xl font-bold">90,000+</p>
+              <p class="text-color text-sm">Patients Treated</p>
+            </div>
+            <div class="text-center">
+              <p class="text-primary text-2xl font-bold">500+</p>
+              <p class="text-color text-sm">Perma Cath Insertion</p>
+            </div>
+            <div class="text-center">
+              <p class="text-primary text-2xl font-bold">500+</p>
+              <p class="text-color text-sm">Kidney Biopsy</p>
+            </div>
+            <div class="text-center">
+              <p class="text-primary text-2xl font-bold">2,000+</p>
+              <p class="text-color text-sm">Jugular Catheter Insertion</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    <!-- Work Experience -->
+    <!-- <div class="mt-20">
+      <h3 class="text-xl font-bold mb-6">Work Experience</h3>
+      <div class="space-y-8">
+        <div class="flex items-center space-x-6">
+          <img src="assets/hospital1.jpg" alt="Hospital 1" class="w-40 h-40 rounded-lg">
+          <div>
+            <h4 class="font-bold">Medica Superspeciality Hospital, Kolkata</h4>
+            <p class="text-gray-500">November 2018 - Present</p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  
+    <!-- Memberships & Certifications -->
+    <div class="mt-20 mb-10">
+        <app-heading [icon]="'fa-hospital'" [title]="'Memberships & Certifications'"></app-heading>          
+      
+        <div class=" flex flex-wrap gap-6 justify-center">
+          <div *ngFor="let certificate of membersAndCertifications" class="w-60 h-60 rounded-lg overflow-hidden shadow-lg border bg-white">
+            <img [src]="certificate" class="w-full h-full object-contain">
+          </div>
+        </div>
+      </div>
+      
+   
+      
+  
+    <!-- Awards & Recognitions -->
+    <div class="mt-20">
+        <app-heading [icon]="'fa-hospital'" [title]="'Awards & Recognitions'"></app-heading> 
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="p-4 border rounded-lg shadow-md text-center" *ngFor="let award of awards">
+          <img [src]="award.image" class="w-40 h-auto mx-auto">
+          <p class="mt-2">{{award.title}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  

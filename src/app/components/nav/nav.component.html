@@ -1,18 +1,40 @@
 <!-- nav.component.html -->
-<nav class="flex justify-between items-center bg-primary px-6 py-4">
+<nav class="flex justify-between items-center px-6 py-4 bg-white shadow-md">
   <div class="logo">
-    <img 
-      src="https://drrohitrungta.com/wp-content/uploads/2023/06/Web_capture_20-10-2022_133142_-removebg-preview.png" 
-      alt="Dr. Rohit Rungta Logo" 
-      class="logo-img"
-    />
+    <img src="https://drrohitrungta.com/wp-content/uploads/2023/06/Web_capture_20-10-2022_133142_-removebg-preview.png"
+      alt="Dr. Rohit Rungta Logo" class="h-16" />
   </div>
-    <ul class="flex gap-4 text-white">
-      <li>Home</li>
-      <li>About</li>
-      <li>Services</li>
-      <li>Blog</li>
-      <li>Contact</li>
-    </ul>
-  </nav>
-  
+  <ul class="flex gap-6 items-center ">
+    <li>
+      <button
+        class="text-small gap-1 bg-transparent text-primary border border-primary px-4 py-1 rounded-md transition duration-300 hover:bg-primary hover:text-bg" (click)="navigate('home')">
+        Home
+      </button>
+    </li>
+    <li class="relative group">
+      <button
+        class="flex items-center text-small gap-1 bg-transparent text-primary border border-primary px-4 py-1 rounded-md transition duration-300 hover:bg-primary hover:text-bg" (click)="navigate('about')">
+        About
+      </button>     
+    </li>
+    <li class="relative group">
+      <button
+        class="flex items-center text-small gap-1 bg-transparent text-primary border border-primary px-4 py-1 rounded-md transition duration-300 hover:bg-primary hover:text-bg"
+        [matMenuTriggerFor]="serviceMenu">
+        Service
+      </button>
+      <mat-menu #serviceMenu="matMenu">
+        <button mat-menu-item class="hover:bg-black hover:text-primary transition duration-300"
+        *ngFor="let consult of consultationList" (click)="navigateToService(consult.routerLink)">
+          {{consult.name}}
+        </button>
+      </mat-menu>
+    </li>
+    <li>
+      <button
+        class="text-small gap-1 bg-transparent text-primary border border-primary px-4 py-1 rounded-md transition duration-300 hover:bg-primary hover:text-bg">
+        Contact Us
+      </button>
+    </li>
+  </ul>
+</nav>

@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { PreventiveNephrologyComponent } from './components/consultsus/preventive-nephrology/preventive-nephrology.component';
+import { AcuteKidneyFailureComponent } from './components/consultsus/acute-kidney-failure/acute-kidney-failure.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 
 const routes: Routes = [
   {
@@ -10,6 +13,17 @@ const routes: Routes = [
     path:'',
     redirectTo:'home',
     pathMatch:'full'
+  },{
+    path: 'service',
+    children: [
+      { path: '', redirectTo: 'preventive-nephrology', pathMatch: 'full' },
+      { path: 'acute-kidney-failure', component: AcuteKidneyFailureComponent },
+      {path:'preventive-nephrology',component:PreventiveNephrologyComponent}
+      // { path: '**', component: NotFoundComponent }, // Handle unknown service names
+    ],
+  },{
+    path:'about',
+    component:AboutUsComponent
   }
 ];
 

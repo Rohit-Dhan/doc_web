@@ -17,10 +17,10 @@ body {
 :root {
     --primary-color: #ff9800;
     --secondary-color: #212121;
-    --text-color: #ffffff;
-    // --text-color: #2c2c2c;
-    --bg-color: #2c2c2c;
-    // --bg-color: #ffffff;
+    // --text-color: #ffffff;
+    --text-color: #2c2c2c;
+    // --bg-color: #2c2c2c;
+    --bg-color: #ffffff;
 
   }
   
@@ -31,3 +31,5 @@ body {
   .custom-icon-color {
     color: var(--primary-color);  
   }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
