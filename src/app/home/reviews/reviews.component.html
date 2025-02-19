@@ -4,7 +4,9 @@
   </div>
 
   <!-- Review Navigation Buttons -->
-  <button class="nav-btn left-4" (click)="prevReview()">&#10094;</button>
+  <button class="nav-btn p-2 border-4 shadow-lg rounded-full left-4" (click)="prevReview()">
+    <i class='fas fa-angle-left'></i>
+  </button>
 
   <!-- Reviews Wrapper with Dynamic Wrap -->
   <div class="reviews-wrapper">
@@ -40,5 +42,7 @@
     </div>
   </div>
 
-  <button class="nav-btn right-4" (click)="nextReview()">&#10095;</button>
+  <button class="nav-btn p-2 border-2 shadow-lg rounded-full right-4" (click)="nextReview()">
+    <i class='fas fa-angle-right'></i>
+  </button>
 </div>
