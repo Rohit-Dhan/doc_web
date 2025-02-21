@@ -1,6 +1,6 @@
 .carousel-container {
   position: relative;
-  height: 400px;
+  height: 450px;
 
   .slides {
     display: flex;
@@ -13,7 +13,7 @@
   }
 
   .text-overlay {
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+ /* Semi-transparent overlay */
     text-align: center;
     transition: opacity 0.7s;
   }
@@ -30,10 +30,26 @@
     padding: 10px;
     cursor: pointer;
     z-index: 10;
-    background-color: var(--primary-color);
+    background-color: var(--bg-color);
+      color: var(--primary-color);
+      box-shadow: 2px 2px  var(--secondary-color);
     &:hover {
       background-color: var(--primary-color);
       color: var(--bg-color);
+      box-shadow: 4px 4px  var(--secondary-color);
     }
   }
+
+  .contactus{
+  
+    @apply relative px-4 py-2 text-sm font-semibold text-bg bg-primary  rounded-lg overflow-hidden transition-all duration-300;
+    background: linear-gradient(to right, transparent 1%, var(--primary-color) 50%);
+    background-size: 200% 100%;
+    background-position: left bottom;
+  }
+  .contactus:hover {
+    @apply text-white bg-primary shadow-lg ;
+    background-position: right bottom;
+  }
+  
 }

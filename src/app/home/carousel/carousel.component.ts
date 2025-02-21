@@ -30,9 +30,9 @@ export class CarouselComponent {
     }
   }
   images = [
-    { src: 'https://investin.org/cdn/shop/articles/jafar-ahmed-E285pJbC4uE-unsplash.jpg?v=1634293259', text: 'Holistic Approach to Kidney Problems', name: 'Dr. Rohit Rungta' },
-    { src: 'https://cdn.britannica.com/76/82676-050-E95B5C00/nurses-patients-care-procedures.jpg?w=400&h=300&c=crop', text: 'One of the best Renal Transplant Physician in Kolkata', name: 'Dr. Rohit Rungta' },
-    { src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB96j7gmCHO4oIV_MYqrTmMXeOoDtMakn4-A&s', text: 'One of the Experienced Nephrologist in Kolkata', name: 'Dr. Rohit Rungta' }
+    { src: 'assets/images/carouse1.jpg',text: 'Senior Consultant Nephrologist & Renal Transplant Physician', name: 'Dr. Santosh Kumar' },
+    { src: 'assets/images/carouse3.png',text: 'Senior Consultant Nephrologist & Renal Transplant Physician', name: 'Dr. Santosh Kumar' },
+    { src: 'assets/images/carouse2.jpg', text: 'Senior Consultant Nephrologist & Renal Transplant Physician', name: 'Dr. Santosh Kumar' },
   ];
   currentIndex = 0;
 

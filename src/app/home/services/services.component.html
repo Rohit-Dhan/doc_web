@@ -11,7 +11,9 @@
   </div>
 
   <!-- Doctor's Image (Hidden on small screens) -->
-  <div class="hidden md:block w-1/2">
-    <img src="https://drrohitrungta.com/wp-content/uploads/2023/07/Picture1-1024x768.png" alt="Doctor Consultation" class="rounded-lg shadow-md">
+  <div class="hidden md:grid md:grid-cols-2 gap-4 w-1/2">
+    <div *ngFor="let img of doctorImages" class="relative">
+      <img [src]="img" alt="Doctor Consultation" class="rounded-lg shadow-md object-cover w-[200px] h-[250px] md:w-[250px] md:h-[300px] hover:scale-105 transition-transform duration-300">
+    </div>
   </div>
 </div>

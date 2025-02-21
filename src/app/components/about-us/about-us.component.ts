@@ -8,17 +8,30 @@ import { Component } from '@angular/core';
 export class AboutUsComponent {
 
   aboutDoctor:any ={
-    name:'Dr. Rohit Rungta',
+    name:'Dr. Santosh Kumar',
     title:'OUR SPECIALIST',
     image:'https://drrohitrungta.com/wp-content/uploads/2023/07/ROM_0149-removebg-preview.png',
     description:[
-      'Dr. Rohit Rungta is a Senior & Leading Consultant in Nephrology & Kidney Transplant Physicians in Kolkata. His area of practice encompasses not only Kolkata, but Howrah, Hooghly, adjoining areas of Bihar, Jharkhand, Nepal and Bangladesh as well.',
-      'He has an experience of more than 15 years and is currently attached to Medica Superspeciality Hospital and Mukundapur (Kidney Transplant Physician).',
-      'He has presented many papers in National and International Journals as well as delivered talks in World Congress of Nephrology at Cape Town, Denmark and Australia for three consecutive years.',
-      'He also takes care of teaching programs for post-doctoral trainees in Nephrology, Post Graduate trainees in Medicine and Dialysis Technicians training as well.',
+      'Dr. Santosh Kumar (Senior Consultant - Nephrology & Renal Transplant Physician) - Nephrology, Kidney Transplant',
+      'Senior Consultant Nephrologist & Renal Transplant Physician - Tender Palm Super Speciality Hospital, Lucknow (Mar 2023 – June 2024)',
+      'Consultant Nephrologist & Renal Transplant Physician And Associate Professor Medicine - IQ City Medical College & IQ City Narayana Multispecialty Hospital, Durgapur, WB (Jan 2018 - May 2020)',
       'He is a clinician par excellence, which is clearly evident in the effort he puts behind the holistic management of his patients.'
-    ]
-  }
+    ],
+    data:[
+      {
+        text:'Total Experience',
+        title:'10+'
+      },{
+        text:'Patients Treated',
+        title:'10000+'
+      },{
+        text:'Kidney Biopsy',
+        title:'1000+'
+      },{
+        text:'Kidney Biopsy',
+        title:'1000+'
+      }
+    ]}
 awards:Array<any>=[
   {
     image:'https://drrohitrungta.com/wp-content/uploads/2023/06/member1.png',

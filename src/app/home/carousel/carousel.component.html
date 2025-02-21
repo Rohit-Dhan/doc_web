@@ -9,16 +9,16 @@
       class="slide min-w-full relative flex items-center justify-center"
     >
       <!-- Image -->
-      <img [src]="image.src" alt="Carousel Image" class="w-full h-[400px] object-cover" />
+      <img [src]="image.src" alt="Carousel Image" class="w-full h-[500px] object-cover" />
 
       <!-- Text Overlay -->
       <div
-        class="text-overlay absolute inset-0 flex flex-col items-center justify-center text-white transition-opacity duration-700"
+        class="text-overlay absolute inset-0 flex flex-col items-center justify-center text-secondary "
         [class.hidden]="i !== currentIndex"
       >
         <p class="text-lg mb-2">{{ image.text }}</p>
-        <h2 class="text-2xl font-bold mb-4">{{ image.name }}</h2>
-        <button class="bg-transparent text-primary border-2 border-primary px-5 py-2 rounded-md transition duration-300 hover:bg-primary hover:text-white">
+        <h2 class="text-2xl text-primary font-bold mb-4">{{ image.name }}</h2>
+        <button class="contactus">
           Contact Us
         </button>
         

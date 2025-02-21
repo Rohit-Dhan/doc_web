@@ -1,40 +1,60 @@
 <!-- nav.component.html -->
-<nav class="flex justify-between items-center px-6 py-4 bg-white shadow-md">
+
+<nav class="flex justify-between items-center px-6 py-4 bg-white shadow-md fixed w-full top-0 z-50">
+  <!-- Logo -->
   <div class="logo">
     <img src="https://drrohitrungta.com/wp-content/uploads/2023/06/Web_capture_20-10-2022_133142_-removebg-preview.png"
       alt="Dr. Rohit Rungta Logo" class="h-16" />
   </div>
-  <ul class="flex gap-6 items-center ">
+
+  <!-- Desktop Navigation -->
+  <ul class="hidden md:flex gap-6 items-center">
     <li>
-      <button
-        class="text-small gap-1 bg-transparent text-primary border border-primary px-4 py-1 rounded-md transition duration-300 hover:bg-primary hover:text-bg" (click)="navigate('home')">
-        Home
+      <button class="nav-button" (click)="navigate('home')"
+      routerLink="/home" routerLinkActive="nav-button-active"
+      >
+        <i class="fas fa-home"></i> <span>Home</span>
+      </button>
+    </li>
+    <li>
+      <button class="nav-button" (click)="navigate('about')"
+      routerLink="/about" routerLinkActive="nav-button-active"
+      >
+        <i class="fas fa-user-md"></i> <span>About</span>
       </button>
     </li>
     <li class="relative group">
-      <button
-        class="flex items-center text-small gap-1 bg-transparent text-primary border border-primary px-4 py-1 rounded-md transition duration-300 hover:bg-primary hover:text-bg" (click)="navigate('about')">
-        About
-      </button>     
-    </li>
-    <li class="relative group">
-      <button
-        class="flex items-center text-small gap-1 bg-transparent text-primary border border-primary px-4 py-1 rounded-md transition duration-300 hover:bg-primary hover:text-bg"
-        [matMenuTriggerFor]="serviceMenu">
-        Service
+      <button class="nav-button flex items-center gap-1" [matMenuTriggerFor]="serviceMenu"
+      routerLink="/service" routerLinkActive="nav-button-active"
+      >
+        <i class="fas fa-stethoscope"></i> <span>Services <i class="fas fa-chevron-down"></i></span>
       </button>
       <mat-menu #serviceMenu="matMenu">
-        <button mat-menu-item class="hover:bg-black hover:text-primary transition duration-300"
-        *ngFor="let consult of consultationList" (click)="navigateToService(consult.routerLink)">
-          {{consult.name}}
+        <button mat-menu-item class="dropdown-item" *ngFor="let consult of consultationList" 
+          (click)="navigateToService(consult.routerLink)">
+          {{ consult.name }}
         </button>
       </mat-menu>
     </li>
     <li>
-      <button
-        class="text-small gap-1 bg-transparent text-primary border border-primary px-4 py-1 rounded-md transition duration-300 hover:bg-primary hover:text-bg">
-        Contact Us
+      <button class="nav-button" (click)="navigate('contact')"
+      routerLink="/contact" routerLinkActive="nav-button-active"
+      >
+        <i class="fas fa-phone-alt"></i> <span>Contact Us</span>
       </button>
     </li>
   </ul>
+
+  <!-- Mobile Menu Button -->
+  <button class="md:hidden text-primary focus:outline-none" (click)="toggleMobileMenu()">
+    <i class="fas fa-bars text-2xl"></i>
+  </button>
+
+  <!-- Mobile Menu -->
+  <div *ngIf="isMobileMenuOpen" class="absolute top-full left-0 w-full bg-white shadow-md flex flex-col items-center py-4 space-y-3 md:hidden">
+    <button class="nav-button w-full" (click)="navigate('home')">Home</button>
+    <button class="nav-button w-full" (click)="navigate('about')">About</button>
+    <button class="nav-button w-full" [matMenuTriggerFor]="serviceMenu">Services</button>
+    <button class="nav-button w-full" (click)="navigate('contact')">Contact Us</button>
+  </div>
 </nav>

@@ -17,6 +17,8 @@ module.exports = {
       fontSize:{
         'text-tiny':'12px',
         'text-small':'14px',
+        'text-md':'16px',
+        'text-xmd':'18px'
       }
     },
   },
