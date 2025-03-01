@@ -10,6 +10,7 @@ module.exports = {
         secondary: "#212121", // Secondary color
         text: "#2c2c2c", // Text color "#2c2c2c
         bg: "#ffffff", // Background color
+        bullet:'#bd9d00'
       },
       fontFamily: {
         roboto: ["Roboto", "Helvetica Neue", "sans-serif"], // Roboto as the primary font

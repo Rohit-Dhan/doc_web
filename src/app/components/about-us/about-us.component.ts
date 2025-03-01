@@ -69,4 +69,43 @@ workExperience:Array<any>=[
     image:''
   }
 ]
+workExperienceList = {
+  list:[
+    "Senior Consultant, Nephrology & Renal Transplant Physician at Max Healthcare (2024 to Present)",
+    "Senior Consultant Nephrologist & Renal Transplant Physician - Tender Palm Super Speciality Hospital, Lucknow (Mar 2023 – June 2024)",
+    "Consultant Nephrologist & Renal Transplant Physician – Paras HMRI, Patna (Aug 2020 – March 2023)",
+    "Consultant Nephrologist & Renal Transplant Physician And Associate Professor Medicine - IQ City Medical College & IQ City Narayana Multispecialty Hospital, Durgapur, WB (Jan 2018 - May 2020)",
+    "Senior Resident (Nephrology) Rabindranath Tagore International Institute Of Cardiac Sciences, Unit Of Narayana Health, Kolkata (Feb 2014 – Feb 2017)",
+    "Assistant Professor in Medicine SMIMS, Gangtok, Sikkim (July 2012 – Feb 2014)"
+  ],
+  icon:'fa-hospital',
+  title:'Work Experience'
+}
+ education = {
+  list:[
+    "MBBS from DMCH in 2005",
+    "MD (Internal Medicine) from RIMS, Ranchi in 2012",
+    "DNB (Nephrology) from Rabindranath Tagore International Institute of Cardiac Sciences, Kolkata in 2019",
+    "MRCP (UK) (Nephrology) / ESENeph in 2022"
+  ],
+  icon:'fa-user-graduate',
+  title:'Education & Traning'
+ }
+ memberShips={
+  list:[
+    "Indian Society of Nephrology",
+    "Indian Society of Organ Transplantation",
+    "International Society of Nephrology"
+  ],title:'Memberships',
+  icon:'fa-layer-group'
+ }
+ awardss={
+  list:[
+    "Awarded travel grant for oral presentation & poster presentation in World Congress of Nephrology 2017, Mexico City (Risk factors for new-onset diabetes mellitus after living donor kidney transplantation in a tertiary referral centre in Eastern India – a prospective single centre study)",
+    "Multiple paper and poster presentations at various National & International conferences",
+    "More than six International & National paper publications"
+  ],title:'Awards',
+  icon:'fa-award'
+ }
+ 
 }

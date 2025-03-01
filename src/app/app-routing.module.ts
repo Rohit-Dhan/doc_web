@@ -16,7 +16,7 @@ const routes: Routes = [
   },{
     path: 'service',
     children: [
-      { path: '', redirectTo: 'preventive-nephrology', pathMatch: 'full' },
+      { path: '', redirectTo: 'preventive-nephrology', pathMatch: 'full', },
       { path: 'acute-kidney-failure', component: AcuteKidneyFailureComponent },
       {path:'preventive-nephrology',component:PreventiveNephrologyComponent}
       // { path: '**', component: NotFoundComponent }, // Handle unknown service names
@@ -28,7 +28,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{ scrollPositionRestoration: 'top' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

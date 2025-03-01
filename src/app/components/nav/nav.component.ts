@@ -14,9 +14,9 @@ export class NavComponent {
    consultationList :Array<{name:string,routerLink:string}> = [
     { name: "Preventive Nephrology", routerLink: "preventive-nephrology" },
     { name: "Acute Kidney Failure", routerLink: "acute-kidney-failure" },
-    { name: "General Nephrology", routerLink: "general-nephrology" },
-    { name: "Chronic Kidney Failure", routerLink: "chronic-kidney-failure" },
-    { name: "Hemodialysis", routerLink: "hemodialysis" },
+    // { name: "General Nephrology", routerLink: "general-nephrology" },
+    // { name: "Chronic Kidney Failure", routerLink: "chronic-kidney-failure" },
+    // { name: "Hemodialysis", routerLink: "hemodialysis" },
     // { name: "Peritoneal Dialysis Home Dialysis", routerLink: "peritoneal-dialysis-home-dialysis" },
     // { name: "Home Hemodialysis", routerLink: "home-hemodialysis" },
     // { name: "Renal Transplantation", routerLink: "renal-transplantation" },

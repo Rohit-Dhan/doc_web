@@ -11,26 +11,30 @@
   <ul class="hidden md:flex gap-6 items-center">
     <li>
       <button class="nav-button" (click)="navigate('home')"
-      routerLink="/home" routerLinkActive="nav-button-active"
+      [appCustomRouterLinkActive]="'home'"
+      [activeClass]="['nav-button-active']"
       >
         <i class="fas fa-home"></i> <span>Home</span>
       </button>
     </li>
     <li>
       <button class="nav-button" (click)="navigate('about')"
-      routerLink="/about" routerLinkActive="nav-button-active"
+      [appCustomRouterLinkActive]="'about'"
+      [activeClass]="['nav-button-active']"
       >
         <i class="fas fa-user-md"></i> <span>About</span>
       </button>
     </li>
     <li class="relative group">
       <button class="nav-button flex items-center gap-1" [matMenuTriggerFor]="serviceMenu"
-      routerLink="/service" routerLinkActive="nav-button-active"
+      [appCustomRouterLinkActive]="'service'"
+      [activeClass]="['nav-button-active']"
       >
         <i class="fas fa-stethoscope"></i> <span>Services <i class="fas fa-chevron-down"></i></span>
       </button>
       <mat-menu #serviceMenu="matMenu">
-        <button mat-menu-item class="dropdown-item" *ngFor="let consult of consultationList" 
+        <button mat-menu-item  [appCustomRouterLinkActive]="consult.routerLink"
+        [activeClass]="['text']" class="dropdown-item" *ngFor="let consult of consultationList" 
           (click)="navigateToService(consult.routerLink)">
           {{ consult.name }}
         </button>
@@ -38,7 +42,8 @@
     </li>
     <li>
       <button class="nav-button" (click)="navigate('contact')"
-      routerLink="/contact" routerLinkActive="nav-button-active"
+      [appCustomRouterLinkActive]="'contact'"
+      [activeClass]="['nav-button-active']"
       >
         <i class="fas fa-phone-alt"></i> <span>Contact Us</span>
       </button>

@@ -13,12 +13,14 @@ import { ContactComponent } from './components/contact/contact.component';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { HomeComponent } from './home/home.component';
 import { MaterialModule } from './core/constants/material.module';
-import { CommonModule } from '@angular/common';
+import { CommonModule, HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { PreventiveNephrologyComponent } from './components/consultsus/preventive-nephrology/preventive-nephrology.component';
 import { AcuteKidneyFailureComponent } from './components/consultsus/acute-kidney-failure/acute-kidney-failure.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { HeadingComponent } from './components/heading/heading.component';
 import { BaseImageComponent } from './components/base-image/base-image.component';
+import { ListComponent } from './components/list/list.component';
+import { DirectiveModule } from './core/directive/directive.modules';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +35,8 @@ import { BaseImageComponent } from './components/base-image/base-image.component
     AcuteKidneyFailureComponent,
     AboutUsComponent,
     HeadingComponent,
-    BaseImageComponent
+    BaseImageComponent,
+    ListComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,9 +44,10 @@ import { BaseImageComponent } from './components/base-image/base-image.component
     BrowserAnimationsModule,
     GoogleMapsModule,
     MaterialModule,
-    CommonModule
+    CommonModule,
+    DirectiveModule
   ],
-  providers: [],
+  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
