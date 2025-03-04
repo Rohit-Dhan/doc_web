@@ -1,9 +1,10 @@
 import { Component, HostListener } from '@angular/core';
 
 @Component({
-  selector: 'app-reviews',
-  templateUrl: './reviews.component.html',
-  styleUrls: ['./reviews.component.scss']
+    selector: 'app-reviews',
+    templateUrl: './reviews.component.html',
+    styleUrls: ['./reviews.component.scss'],
+    standalone: false
 })
 export class ReviewsComponent {
   reviews = [

@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-acute-kidney-failure',
-  templateUrl: './acute-kidney-failure.component.html',
-  styleUrls: ['./acute-kidney-failure.component.scss']
+    selector: 'app-acute-kidney-failure',
+    templateUrl: './acute-kidney-failure.component.html',
+    styleUrls: ['./acute-kidney-failure.component.scss'],
+    standalone: false
 })
 export class AcuteKidneyFailureComponent {
   data = {

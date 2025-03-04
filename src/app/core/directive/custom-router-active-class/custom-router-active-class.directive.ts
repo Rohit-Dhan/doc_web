@@ -2,7 +2,8 @@ import { Directive, ElementRef, Input, Renderer2 } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { Subscription, filter } from 'rxjs';
 @Directive({
-  selector: '[appCustomRouterLinkActive]'
+    selector: '[appCustomRouterLinkActive]',
+    standalone: false
 })
 export class CustomRouterActiveClassDirective {
 

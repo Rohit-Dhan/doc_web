@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-preventive-nephrology',
-  templateUrl: './preventive-nephrology.component.html',
-  styleUrls: ['./preventive-nephrology.component.scss']
+    selector: 'app-preventive-nephrology',
+    templateUrl: './preventive-nephrology.component.html',
+    styleUrls: ['./preventive-nephrology.component.scss'],
+    standalone: false
 })
 export class PreventiveNephrologyComponent {
   data = {
