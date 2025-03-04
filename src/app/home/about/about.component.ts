@@ -10,18 +10,17 @@ export class AboutComponent {
 
   aboutDoctor:any ={
     name:'Dr. Santosh Kumar',
-    title:'OUR SPECIALIST',
+    title:'',
     image:'https://drrohitrungta.com/wp-content/uploads/2023/07/ROM_0149-removebg-preview.png',
     description:[
-      'Dr. Santosh Kumar (Senior Consultant - Nephrology & Renal Transplant Physician) - Nephrology, Kidney Transplant',
-      'Senior Consultant Nephrologist & Renal Transplant Physician - Tender Palm Super Speciality Hospital, Lucknow (Mar 2023 – June 2024)',
-      'Consultant Nephrologist & Renal Transplant Physician And Associate Professor Medicine - IQ City Medical College & IQ City Narayana Multispecialty Hospital, Durgapur, WB (Jan 2018 - May 2020)',
-      'He is a clinician par excellence, which is clearly evident in the effort he puts behind the holistic management of his patients.'
+      'Welcome to Dr. Santosh Kumar’s Kidney Clinic, your trusted partner in kidney health. Dr. Santosh Kumar, a leading Senior Consultant in Nephrology and Kidney Transplant at Max Super Speciality Hospital in Lucknow, India, skilfully addresses an extensive range of kidney-related conditions and treatments.',
+      `With over 15 years of esteemed experience, Dr. Kumar's expertise extends not only throughout Lucknow but also to neighbouring areas, including Poorvanchal, Bihar, and Nepal.`,
+      `Renowned for his successful kidney transplant procedures, encompassing both ABO compatible and incompatible complexities, Dr. Kumar has earned a reputation as a trusted authority in kidney health. Schedule your appointment today to take the first step towards better kidney health.`
     ],
     data:[
       {
         text:'Total Experience',
-        title:'10+'
+        title:'15+'
       },{
         text:'Patients Treated',
         title:'10000+'

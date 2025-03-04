@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { PreventiveNephrologyComponent } from './components/consultsus/preventive-nephrology/preventive-nephrology.component';
 import { AcuteKidneyFailureComponent } from './components/consultsus/acute-kidney-failure/acute-kidney-failure.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
+import { PatientComponent } from './components/patient/patient.component';
 
 const routes: Routes = [
   {
@@ -24,6 +25,9 @@ const routes: Routes = [
   },{
     path:'about',
     component:AboutUsComponent
+  },{
+    path:'patient',
+    component:PatientComponent
   }
 ];
 

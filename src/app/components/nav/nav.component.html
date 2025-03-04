@@ -3,8 +3,7 @@
 <nav class="flex justify-between items-center px-6 py-4 bg-white shadow-md fixed w-full top-0 z-50">
   <!-- Logo -->
   <div class="logo">
-    <img src="https://drrohitrungta.com/wp-content/uploads/2023/06/Web_capture_20-10-2022_133142_-removebg-preview.png"
-      alt="Dr. Rohit Rungta Logo" class="h-16" />
+    <!-- <img  class="h-16" /> -->
   </div>
 
   <!-- Desktop Navigation -->
@@ -39,6 +38,14 @@
           {{ consult.name }}
         </button>
       </mat-menu>
+    </li>
+    <li>
+      <button class="nav-button" (click)="navigate('patient')"
+      [appCustomRouterLinkActive]="'contact'"
+      [activeClass]="['nav-button-active']"
+      >
+      <i class="fa-solid fa-hospital-user"></i> <span>Patient Info</span>
+      </button>
     </li>
     <li>
       <button class="nav-button" (click)="navigate('contact')"

@@ -31,9 +31,9 @@ export class CarouselComponent {
     }
   }
   images = [
-    { src: 'assets/images/carouse1.jpg',text: 'Senior Consultant Nephrologist & Renal Transplant Physician', name: 'Dr. Santosh Kumar' },
-    { src: 'assets/images/carouse3.png',text: 'Senior Consultant Nephrologist & Renal Transplant Physician', name: 'Dr. Santosh Kumar' },
-    { src: 'assets/images/carouse2.jpg', text: 'Senior Consultant Nephrologist & Renal Transplant Physician', name: 'Dr. Santosh Kumar' },
+    { src: 'assets/images/carouse1.jpg',text: 'Experienced Nephrologist with 15 years of expertise.', name: 'Dr. Santosh Kumar' },
+    { src: 'assets/images/carouse3.png',text: 'Comprehensive Kidney Care, including diagnosis, treatment, and prevention.', name: 'Dr. Santosh Kumar' },
+    { src: 'assets/images/carouse2.jpg', text: `Patient-Centered Approach for individualized treatment plans.`, name: 'Dr. Santosh Kumar' },
   ];
   currentIndex = 0;
 
