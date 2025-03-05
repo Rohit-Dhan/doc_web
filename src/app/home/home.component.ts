@@ -19,4 +19,21 @@ export class HomeComponent {
     icon:'fa-hospital',
     title:'Work Experience'
   }
+  consultationList:{list:Array<string>,icon:string,title:string}  = {
+    list:  [
+      "Chronic Kidney Disease (CKD) Management",
+      "Hypertension & Kidney Health",
+      "Dialysis Services",
+      "Kidney Transplant Evaluation & Follow-Up",
+      "Electrolyte & Fluid Imbalance Treatment",
+      "Nephrotic Syndrome & Glomerulonephritis",
+      "Kidney Stone treatment",
+      "Diabetic Kidney Disease",
+      "Urinary/ Kidney Infections (UTI)",
+      "Early Diagnosis of Kidney Diseases & Prevention of Kidney Diseases",
+      "Paediatric Nephrology"
+    ],
+    icon:'fa-stethoscope',
+    title:'Services'
+  };
 }

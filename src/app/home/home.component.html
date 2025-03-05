@@ -1,9 +1,17 @@
 <app-carousel></app-carousel>
 <app-about></app-about>
 <app-services></app-services>
-<div class="">  
-  <app-list [details]="workExperienceList"></app-list>
-</div>
+  <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mb-2">
+    <div class="bg-white p-2 rounded-lg shadow-md border hover:shadow-[0_8px_15px] hover:shadow-primary">
+      
+      <app-list [details]="consultationList"></app-list>
+    </div>
+    <!-- Get In Touch Section -->
+    <div class="bg-white p-2 rounded-lg shadow-md border hover:shadow-[0_8px_15px] hover:shadow-primary">
+      <app-list [details]="workExperienceList"></app-list>
+    </div>
+  </div>
+
 <app-reviews></app-reviews>
 
 
