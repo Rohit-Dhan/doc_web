@@ -1,12 +1,12 @@
 <div class="flex flex-col items-center ">
   <app-heading [icon]="details.icon" [title]="details.title"></app-heading>  
-  <ul class="space-y-5 mt-2 w-full max-w-2xl">
-    <li *ngFor="let work of details.list" class="flex items-start gap-2">
+  <ul class="space-y-3 w-full max-w-2xl">
+    <li *ngFor="let work of details.list" class="flex items-baseline gap-2">
       <div class="relative">
-        <div class="w-4 h-4 rounded-full bg-primary "></div>
-        <div class="h-full w-1 absolute left-1/2 "></div>
+        <div class="w-2 h-2 rounded-full bg-secondary top-2"></div>
+        <!-- <div class="h-full w-1 absolute left-1/2 "></div> -->
       </div>
-      <div class="space-y-1">
+      <div class="">
         <p class="text-sm text-text">{{ work }}</p>
 
       </div>

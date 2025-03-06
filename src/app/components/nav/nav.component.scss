@@ -1,6 +1,10 @@
-/* nav.component.scss */
-nav {
-    background-color: var( --bg-color);
+
+
+// +++++++++++++++++++
+
+  /* nav.component.scss */
+  nav {
+    // background-color: var( --secondary-color);
   }
   /* Logo Container */
 .logo {
@@ -12,27 +16,35 @@ nav {
 // .nav-button {
   .nav-button {
     @apply relative flex items-center justify-center gap-2  px-4 py-2 text-sm font-semibold text-primary   rounded-lg   transition-all duration-300;
-    background: linear-gradient(to right, transparent 1%, var(--primary-color) 50%);
+    background: linear-gradient(to right, transparent 1%, var(--bg-color) 50%);
     background-size: 200% 100%;
     background-position: left bottom;
   }
   
   .nav-button:hover {
-    @apply text-bg bg-primary;
+    @apply text-secondary bg-primary;
     background-position: left bottom;
   }
+  .nav-button:hover i,
+.nav-button:hover span {
+  @apply text-secondary;
+}
+
   .nav-button i {
-    @apply text-text-xmd leading-none flex items-center;
+    @apply text-bg text-text-xmd leading-none flex items-center;
   }
   .nav-button span {
-    @apply text-bg text-text-md leading-none flex items-center;
+    @apply text-secondary text-text-md leading-none flex items-center;
   }
   .nav-button-active{
-    @apply text-bg bg-primary;
+    @apply text-secondary bg-primary;
     background-position: left bottom;
   }
   .nav-button-active span{
-    @apply text-bg leading-none flex items-center;
+    @apply text-secondary leading-none flex items-center;
+  }
+  .nav-button-active i{
+    @apply text-secondary leading-none flex items-center;
   }
 // .nav-button {
 //   @apply relative px-4 py-2 text-sm font-semibold text-bg  rounded-lg overflow-hidden transition-all duration-300;

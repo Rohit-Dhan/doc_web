@@ -21,6 +21,7 @@ import { HeadingComponent } from './components/heading/heading.component';
 import { BaseImageComponent } from './components/base-image/base-image.component';
 import { ListComponent } from './components/list/list.component';
 import { DirectiveModule } from './core/directive/directive.modules';
+import { GalleryComponent } from './components/gallery/gallery.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,6 +38,7 @@ import { DirectiveModule } from './core/directive/directive.modules';
     HeadingComponent,
     BaseImageComponent,
     ListComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,

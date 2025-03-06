@@ -8,7 +8,6 @@ import { Component } from '@angular/core';
 })
 export class ServicesComponent {
   consultationList: string[] = [
-    "Kidney Transplant - ABO incompatible",
     "Kidney Transplant - ABO compatible",
     "Chronic Kidney Disease (CKD)",
     "Diabetic Kidney Disease",

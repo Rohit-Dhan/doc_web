@@ -5,6 +5,7 @@ import { PreventiveNephrologyComponent } from './components/consultsus/preventiv
 import { AcuteKidneyFailureComponent } from './components/consultsus/acute-kidney-failure/acute-kidney-failure.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { PatientComponent } from './components/patient/patient.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
 
 const routes: Routes = [
   {
@@ -28,6 +29,9 @@ const routes: Routes = [
   },{
     path:'patient',
     component:PatientComponent
+  },{
+    path:'gallery',
+    component:GalleryComponent
   }
 ];
 

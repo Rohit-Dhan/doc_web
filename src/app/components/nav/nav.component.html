@@ -48,6 +48,14 @@
       </button>
     </li>
     <li>
+      <button class="nav-button" (click)="navigate('gallery')"
+      [appCustomRouterLinkActive]="'gallery'"
+      [activeClass]="['nav-button-active']"
+      >
+      <i class="fa-solid fa-hospital-user"></i> <span>Gallery</span>
+      </button>
+    </li>
+    <li>
       <button class="nav-button" (click)="navigate('contact')"
       [appCustomRouterLinkActive]="'contact'"
       [activeClass]="['nav-button-active']"

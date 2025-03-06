@@ -13,7 +13,7 @@
     <div class="reviews">
       <div
         *ngFor="let review of paginatedReviews"
-        class="review-card bg p-6 rounded-lg shadow-lg shadow-primary flex flex-col justify-between text flex-shrink-0 w-[300px] max-w-[300px] hover:shadow-[0_8px_15px] hover:shadow-primary"
+        class="review-card bg p-6 rounded-lg shadow-lg shadow-secondary flex flex-col justify-between text flex-shrink-0 w-[300px] max-w-[300px] hover:shadow-[0_4px_8px] hover:shadow-primary"
       >
         <!-- User Info -->
         <div class="flex items-center gap-4 mb-4">
@@ -34,7 +34,7 @@
         <!-- Rating -->
         <div class="flex items-center">
           <div class="flex gap-1">
-            <i class="fa fa-star custom-icon-color" *ngFor="let _ of [].constructor(review.rating)"></i>
+            <i class="fa fa-star text-secondary" *ngFor="let _ of [].constructor(review.rating)"></i>
           </div>
           <span class="text-sm text-400 ml-2">{{ review.rating }}/5</span>
         </div>
