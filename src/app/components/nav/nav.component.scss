@@ -1,67 +1,37 @@
-
-
 // +++++++++++++++++++
 
-  /* nav.component.scss */
-  nav {
-    // background-color: var( --secondary-color);
-  }
-  /* Logo Container */
+/* nav.component.scss */
+nav {
+  // background-color: var( --secondary-color);
+}
+
+/* Logo Container */
 .logo {
   display: flex;
   align-items: center;
 }
 
-
-// .nav-button {
-  .nav-button {
-    @apply relative flex items-center justify-center gap-2  px-4 py-2 text-sm font-semibold text-primary   rounded-lg   transition-all duration-300;
-    background: linear-gradient(to right, transparent 1%, var(--bg-color) 50%);
-    background-size: 200% 100%;
-    background-position: left bottom;
-  }
-  
-  .nav-button:hover {
-    @apply text-secondary bg-primary;
-    background-position: left bottom;
-  }
-  .nav-button:hover i,
-.nav-button:hover span {
-  @apply text-secondary;
+.nav-button {
+  @apply relative flex items-center justify-center gap-2 px-2 py-2 text-sm  border-b-4 border-primary  rounded-lg transition-all duration-300;
 }
 
-  .nav-button i {
-    @apply text-bg text-text-xmd leading-none flex items-center;
-  }
-  .nav-button span {
-    @apply text-secondary text-text-md leading-none flex items-center;
-  }
-  .nav-button-active{
-    @apply text-secondary bg-primary;
-    background-position: left bottom;
-  }
-  .nav-button-active span{
-    @apply text-secondary leading-none flex items-center;
-  }
-  .nav-button-active i{
-    @apply text-secondary leading-none flex items-center;
-  }
-// .nav-button {
-//   @apply relative px-4 py-2 text-sm font-semibold text-bg  rounded-lg overflow-hidden transition-all duration-300;
-//   background: linear-gradient(to right, transparent 10%, var(--primary-color) 50%);
-//   background-size: 200% 100%;
-//   background-position: right bottom;
-// }
+.nav-button i {
+  @apply text-bg text-text-small leading-none flex items-center;
+}
 
-// .nav-button:hover {
-//   @apply text-primary bg-bg;
-//   background-position: left bottom;
-// }
+.nav-button span {
+  @apply text-bg text-text-md leading-none flex items-center;
+}
 
-
+.nav-button:hover{
+  @apply border-bg
+}
+.nav-button-active{
+  @apply border-bg
+}
 .dropdown-item {
-  @apply  hover:text-primary hover:bg-secondary  transition duration-300;
+  @apply  hover:text-bg hover:bg-primary  transition duration-300;
 }
 .text{
-  color: var(--primary-color);
+  @apply text-bg bg-primary
 }

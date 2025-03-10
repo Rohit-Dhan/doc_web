@@ -27,9 +27,6 @@ export class AboutComponent {
       },{
         text:'Kidney Biopsy',
         title:'1000+'
-      },{
-        text:'Kidney Biopsy',
-        title:'1000+'
       }
     ]
   }

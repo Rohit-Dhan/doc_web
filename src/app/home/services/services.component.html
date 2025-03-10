@@ -1,17 +1,17 @@
 <div class="consult-container mt-10 flex flex-col md:flex-row gap-8 p-2">
   <!-- Consultation List -->
   <div class="consult-list w-full md:w-1/2 pl-4">
-    <h2 class="text-2xl font-bold text-primary mb-4">Consult Us for :</h2>
+    <h3 class="text-text-lg font-bold text-header mb-4">Consult Us for :</h3>
     <ul class="space-y-3 pl-6">
-      <li  *ngFor="let item of consultationList" class="flex items-center gap-2 text-color ">
-        <i class="fas fa-file-medical text-primary"></i>
+      <li  *ngFor="let item of consultationList" class=" text-text-small flex items-center gap-2 text-textcolor ">
+        <i class="fas fa-file-medical text-primary text-text-md"></i>
         {{ item }}
       </li>
     </ul>
   </div>
 
   <!-- Doctor's Image (Hidden on small screens) -->
-  <div class="hidden md:grid md:grid-cols-3 gap-2 w-1/2">
+  <div class="hidden md:grid md:grid-cols-2 gap-2 w-1/2">
     <div *ngFor="let img of doctorImages" class="relative">
       <img [src]="img" alt="Doctor Consultation" class="rounded-lg shadow-md object-cover w-[200px] h-[200px] md:w-[250px] md:h-[300px] hover:scale-105 transition-transform duration-300">
     </div>

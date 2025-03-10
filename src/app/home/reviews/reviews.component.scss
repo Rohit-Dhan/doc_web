@@ -1,6 +1,6 @@
 .reviews-container {
   position: relative;
-  background-color: var(--bg-color);
+  background-color: var(--secondary-color);
   text-align: center;
 }
 
@@ -29,12 +29,11 @@
   padding: 10px;
   cursor: pointer;
   z-index: 10;
-  background-color: var(--secondary-color);
-    color: var(--bg-color);
+  background-color: var(--bg-color);
+    color: var(--primary2-color);
   &:hover {
-    background-color: var(--bg-color);
-    color: var(--primary-color);
-    box-shadow: 3px 3px  var(--secondary-color);
+    background-color: var(--primary2-color);
+    color: var(--bg-color);
   }
 }
 

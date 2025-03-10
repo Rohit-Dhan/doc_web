@@ -1,6 +1,6 @@
-<div class="reviews-container relative bg-secondary py-8 flex flex-col items-center">
+<div class="reviews-container relative  py-8 flex flex-col items-center">
   <div class="text-center mb-6">
-    <h2 class="text-3xl font-bold text-primary uppercase">Happy Patients & Feedbacks</h2>
+    <h3 class="text-text-lg font-bold text-header uppercase">Happy Patients & Feedbacks</h3>
   </div>
 
   <!-- Review Navigation Buttons -->
@@ -13,7 +13,7 @@
     <div class="reviews">
       <div
         *ngFor="let review of paginatedReviews"
-        class="review-card bg p-6 rounded-lg shadow-lg shadow-secondary flex flex-col justify-between text flex-shrink-0 w-[300px] max-w-[300px] hover:shadow-[0_4px_8px] hover:shadow-primary"
+        class="review-card  p-6 rounded-lg shadow-lg  flex flex-col justify-between text-textcolor flex-shrink-0 w-[300px] max-w-[300px] hover:shadow-[0_4px_8px] hover:shadow-primary"
       >
         <!-- User Info -->
         <div class="flex items-center gap-4 mb-4">
@@ -23,20 +23,20 @@
             class="w-12 h-12 rounded-full object-cover"
           />
           <div>
-            <h4 class="font-bold text-lg">{{ review.name }}</h4>
+            <h4 class="font-bold text-text-xmd">{{ review.name }}</h4>
             <!-- <p class="text-sm text-gray-400">@username</p> -->
           </div>
         </div>
 
         <!-- Review Text -->
-        <p class="text-sm mb-4 flex-grow">"{{ review.feedback }}"</p>
+        <p class="text-text-small mb-4 flex-grow ">"{{ review.feedback }}"</p>
 
         <!-- Rating -->
         <div class="flex items-center">
           <div class="flex gap-1">
-            <i class="fa fa-star text-secondary" *ngFor="let _ of [].constructor(review.rating)"></i>
+            <i class="fa fa-star text-text-tiny text-primary" *ngFor="let _ of [].constructor(review.rating)"></i>
           </div>
-          <span class="text-sm text-400 ml-2">{{ review.rating }}/5</span>
+          <span class="text-sm  ml-2">{{ review.rating }}/5</span>
         </div>
       </div>
     </div>
